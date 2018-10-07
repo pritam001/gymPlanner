@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Planner</title>
+</head>
+<body>
+    <div>
+        <h1>Let's plan it properly this time!</h1>
+        {% if username %}
+            <h4>Are you ready? {{ username }}</h4>
+        {% else %}
+            <h4>Ready?</h4>
+        {% endif %}
+    </div>
+    <div>
+        <h2>Training days :</h2>
+        <h4>{{ one_hot_encoded_weekdays }}</h4>
+    </div>
+</body>
+</html>

@@ -1,10 +1,11 @@
 from flask import Flask, render_template
 from planner import algorithm, constants
+from model.body import Body
 
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/hello')
 def hello_world():
     return render_template('main.html')
 
@@ -17,6 +18,17 @@ def hello(username="Guest"):
         'planner.html',
         username=username,
         one_hot_encoded_weekdays=one_hot_encoded_weekdays
+    )
+
+
+@app.route('/')
+def test():
+    value1 = Body()
+    value2 = Body().show_body_status()
+    return render_template(
+        'test.html',
+        value1=value1,
+        value2=value2
     )
 
 

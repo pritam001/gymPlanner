@@ -11,3 +11,5 @@ def one_hot_encoded_weekdays():
     #  ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     one_hot_array = [1, 1, 0, 1, 1, 1, 0]
     return list(zip(week_days_list, one_hot_array))
+
+

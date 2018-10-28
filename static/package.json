@@ -1,0 +1,17 @@
+{
+  "name": "gym_planner",
+  "version": "1.0.0",
+  "description": "Gym planner frontend built with ReactJS v6 and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Pritam Sarkar",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.23.1"
+  }
+}
